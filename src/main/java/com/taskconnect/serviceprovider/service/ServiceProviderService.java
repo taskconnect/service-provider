@@ -17,7 +17,6 @@ public class ServiceProviderService {
 
 
     public ServiceProvider findServiceProviderById(Long id) {
-        //? Create a custom exception?
         return serviceProviderRepository.findById(id).orElseThrow(() -> new EmptyResultDataAccessException("Provedor de serviço não encontrado.", 1));
     }
 
