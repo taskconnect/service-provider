@@ -32,4 +32,6 @@ public class ServiceProvider {
     private String phoneNumber;
 
     private String teste;
+
+    private String teste2;
 }
