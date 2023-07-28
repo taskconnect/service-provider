@@ -31,3 +31,4 @@ public class ServiceProvider {
     @Pattern(regexp = RegexConstants.PHONE_NUMBER, message = "Número de telefone inválido.")
     private String phoneNumber;
 }
+q
