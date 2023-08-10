@@ -3,10 +3,10 @@ name: Java CI with Maven
 on:
   push:
     branches:
-      - main  # ou outra branch que deseja executar a CI
+      - main 
   pull_request:
     branches:
-      - main  # ou outra branch que deseja executar a CI
+      - main  
 
 jobs:
   build:
