@@ -1,8 +1,7 @@
 package com.taskconnect.serviceprovider.cofig;
 
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -13,7 +12,7 @@ import springfox.documentation.spring.web.plugins.Docket;
 import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @EnableSwagger2
-public class SwaggerConfig {
+public class SwaggerConfig  {
 
     @Bean
     public Docket docket() {
@@ -38,8 +37,8 @@ public class SwaggerConfig {
 
     private Contact contact(){
         return new Contact(
-                "Daniel Alves de Moraes",
-                "https://github.com/danielvdg",
+                "Provedor de Serviços",
+                "https://github.com/taskconnect",
                 "danielalvesvdg@gmail.com");
     }
 
