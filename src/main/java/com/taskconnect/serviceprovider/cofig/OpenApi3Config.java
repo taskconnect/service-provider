@@ -6,7 +6,7 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 @OpenAPIDefinition(info = @Info(
-        title = "provedor de Serviços",
+        title = "Provedor de Serviços",
         description = "Serviços Para Encontrar Profissionais",
         version = "v1"
 ))
