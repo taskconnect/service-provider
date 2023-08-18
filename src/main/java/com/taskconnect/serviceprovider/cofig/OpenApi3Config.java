@@ -7,7 +7,7 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 @OpenAPIDefinition(info = @Info(
         title = "provedor de Serviços",
-        description = "Serviços encontrar profissionais",
+        description = "Serviços Para Encontrar Profissionais",
         version = "v1"
 ))
 public class OpenApi3Config {
