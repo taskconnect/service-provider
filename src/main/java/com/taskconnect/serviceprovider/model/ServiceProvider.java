@@ -30,4 +30,6 @@ public class ServiceProvider {
     @Column(nullable = false)
     @Pattern(regexp = RegexConstants.PHONE_NUMBER, message = "Número de telefone inválido.")
     private String phoneNumber;
+
+    private String teste;
 }
