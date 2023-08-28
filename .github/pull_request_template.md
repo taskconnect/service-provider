@@ -1,8 +1,8 @@
-## Resumo do PR:
+## Objetivo do PR
 
 > Insira a resumo aqui...
 
-## Descrição/Objetivo do PR
+## Descrição do PR
 
 > Foi feita uma requisição para uma...
 
@@ -18,13 +18,11 @@
 - [ ] - Médio
 - [ ] - Baixo
 
-Qual motivo: Essa mudança irá impactar...
-
 ## Tipo de Mudança
 
-**Marque opção abaixo: Exemplo: [X]**
+**Marque uma opção abaixo. Exemplo: [X]**
 
 - [ ] - feat (new feature)
 - [ ] - fix (bug fix)
 - [ ] - docs (changes to documentation)
-- [ ] - style (formatting, missing semi colons, etc; no code change)
+- [ ] - style (formatting, missing semi-colons, etc.; no code change)

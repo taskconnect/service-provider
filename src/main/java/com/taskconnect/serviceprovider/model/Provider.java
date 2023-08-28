@@ -9,12 +9,14 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
+import java.util.Set;
+
 @Getter
 @Setter
-@AllArgsConstructor
 @NoArgsConstructor
+@AllArgsConstructor
 @Entity
-public class ServiceProvider {
+public class Provider {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
@@ -30,4 +32,12 @@ public class ServiceProvider {
     @Column(nullable = false)
     @Pattern(regexp = RegexConstants.PHONE_NUMBER, message = "Número de telefone inválido.")
     private String phoneNumber;
+
+    @ManyToMany
+    @JoinTable(
+            name = "provider_task",
+            joinColumns = @JoinColumn(name = "provider_id", referencedColumnName = "id"),
+            inverseJoinColumns = @JoinColumn(name = "task_id", referencedColumnName = "id")
+    )
+    private Set<Task> tasksProvided;
 }
